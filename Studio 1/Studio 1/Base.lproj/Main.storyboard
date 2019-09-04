@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Studio_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="khT-e6-FjZ">
+                                <rect key="frame" x="7" y="1328" width="177" height="31"/>
+                                <color key="tintColor" red="0.59454470872879028" green="0.15000683069229126" blue="0.12546181678771973" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="380" id="dp5-Rr-hYV"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="380" id="xoP-LQ-gXS"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeAlpha:" destination="BYZ-38-t0r" eventType="valueChanged" id="4pl-GG-7n5"/>
+                                </connections>
+                            </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tTl-f5-DR6">
+                                <rect key="frame" x="33" y="753" width="200" height="433"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="AiT-iU-4Ky"/>
+                                    <constraint firstAttribute="height" constant="200" id="SL2-er-cxZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoe Wang's First App!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IX0-2X-Zbi">
+                                <rect key="frame" x="8" y="587" width="175" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="UFQ-fr-vxH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1900666654" green="0.4438890815" blue="0.38038647170000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="IX0-2X-Zbi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7ME-SA-8nB"/>
+                            <constraint firstItem="khT-e6-FjZ" firstAttribute="top" secondItem="tTl-f5-DR6" secondAttribute="bottom" constant="40" id="M75-07-CeP"/>
+                            <constraint firstItem="IX0-2X-Zbi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="PlN-JF-UAN"/>
+                            <constraint firstItem="tTl-f5-DR6" firstAttribute="top" secondItem="IX0-2X-Zbi" secondAttribute="bottom" constant="40" id="igX-ea-vl1"/>
+                            <constraint firstItem="tTl-f5-DR6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nFI-OD-UWq"/>
+                            <constraint firstItem="tTl-f5-DR6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tCr-h2-FZ8"/>
+                            <constraint firstItem="IX0-2X-Zbi" firstAttribute="centerX" secondItem="khT-e6-FjZ" secondAttribute="centerX" id="yY1-qB-bAT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="logoImage" destination="tTl-f5-DR6" id="tDZ-qi-8Uu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="126.35467980295567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="100.5" height="100.5"/>
+    </resources>
+</document>
